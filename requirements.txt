@@ -1,0 +1,17 @@
+numpy
+sounddevice
+faster-whisper
+openai
+python-dotenv
+
+# Local conversation memory (embeddings + vector search; no API key)
+sentence-transformers
+faiss-cpu
+deep-translator
+
+# Server for 3D avatar page (optional)
+fastapi
+uvicorn
+
+# Only needed if you run the old Ollama script (optional)
+requests

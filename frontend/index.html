@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Assistant Robot</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Import map: no bundler needed -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <section id="scenePane" class="scenePane">
+        <canvas id="c"></canvas>
+      </section>
+
+      <section class="uiPane">
+        <div class="panel">
+          <div class="panelTop">
+            <div class="title">Robot UI</div>
+            <select id="languageSelect" class="languageSelect" aria-label="Select language">
+              <option value="en">🌍 English</option>
+              <option value="fr">🌍 French</option>
+              <option value="ar">🌍 Arabic</option>
+              <option value="es">🇪🇸 Spanish</option>
+            </select>
+            <button id="listenBtn" class="listenBtn" type="button">🎤 Start Listening</button>
+            <div id="statusText" class="status muted">Idle</div>
+          </div>
+
+          <div class="card">
+            <div class="cardTitle">🧠 Assistant Response</div>
+
+            <div id="userTextRow" class="row">
+              <div class="k">🗣️ You said</div>
+              <div id="userTextEl" class="v muted">—</div>
+            </div>
+
+            <div id="correctedRow" class="row">
+              <div class="k">✅ Corrected</div>
+              <div id="correctedText" class="v muted">—</div>
+            </div>
+
+            <div id="whyRow" class="row">
+              <div class="k">💡 Why</div>
+              <div id="whyText" class="v muted">—</div>
+            </div>
+
+            <div class="row">
+              <div class="k">🤖 Answer</div>
+              <div id="answerText" class="v muted">Waiting…</div>
+            </div>
+          </div>
+
+          <div class="foot muted">
+            Tip: If speech is blocked, click once anywhere on the page.
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+

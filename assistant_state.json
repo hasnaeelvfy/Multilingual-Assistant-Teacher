@@ -1,0 +1,10 @@
+{
+  "turn": 192,
+  "user_text": "Oh là, est-ce que tu peux me parler en Spanish si tu te plais ?",
+  "detected_language": "fr",
+  "selected_language": "es",
+  "answer": "Si quieres aprender español, intenta hablarlo conmigo, y para tu frase puedes decir simplemente: \"Oh, ¿puedes hablarme en español, por favor?\".",
+  "corrected": "Oh, ¿puedes hablarme en español, por favor?",
+  "explanation": "Por favor, usa solo español",
+  "source": "browser"
+}

@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+
+# Local persisted chat memory (may contain private transcripts)
+conversation_memory_store/
