@@ -1,3 +1,5 @@
+![Uploading Screenshot 2026-04-19 170131.png…]()
+
 # English Voice Assistant (Real‑Time)
 
 This project is a **real-time English speaking assistant**:
